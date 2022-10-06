@@ -1,0 +1,21 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 63%);
+    --dark-gray: hsl(0, 0%, 27%);
+    --black: hsl(0, 0%, 0%);
+}
+
+
+.home {
+    width: 100vw;
+
+    font-size: 12px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+
+
+    .img1 {
+        height: 200px;
+        background-color: rgb(161, 161, 161);
+    }
+}

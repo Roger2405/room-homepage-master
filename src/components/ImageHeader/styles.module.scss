@@ -1,0 +1,48 @@
+.div-image {
+    position: relative;
+}
+
+
+.image {
+    width: 100vw;
+
+    * {
+        width: 100%;
+    }
+}
+
+.buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    .button {
+
+        padding: 1rem 1.5rem;
+        background-color: var(--black);
+    }
+}
+
+.div-text {
+    padding: 3rem 1.5rem;
+
+    .title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2rem;
+    }
+
+    .text {
+        margin-top: 1rem;
+        color: var(--gray);
+        letter-spacing: 1px;
+    }
+
+    .shopButton {
+        margin-top: 2rem;
+        gap: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        letter-spacing: 12px;
+    }
+}
