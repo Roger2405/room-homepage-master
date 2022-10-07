@@ -10,13 +10,10 @@ export default function Header() {
     const [showNav, setShowNav] = useState(false);
     return (
         <header className={styles.header}>
-            <img className={styles.icon} onClick={() => setShowNav(!showNav)} src={showNav ? closeIcon : menuIcon} alt="" />
+            <img className={styles.menu} onClick={() => setShowNav(!showNav)} src={showNav ? closeIcon : menuIcon} alt="" />
             <img className={styles.logo} src={Logo} alt="" />
 
-            {
-                showNav &&
-                <Nav />
-            }
+            <Nav show={showNav} />
         </header>
 
 

@@ -1,0 +1,36 @@
+.about-section {
+    @media screen and (min-width:1440px) {
+        display: flex;
+        width: 100vw;
+        height: 30vh;
+
+        .light_img,
+        .dark_img {
+            max-width: calc(40% - 10em);
+        }
+
+        .div-content {
+            box-sizing: content-box;
+            width: calc(100% - (40% - 10em)*2);
+        }
+    }
+
+    .light_img,
+    .dark_img {
+        width: 100%;
+    }
+
+
+    .div-content {
+        padding: 3rem 2rem 2.5rem;
+
+        .title {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.15em;
+            letter-spacing: .5em;
+        }
+
+    }
+
+}

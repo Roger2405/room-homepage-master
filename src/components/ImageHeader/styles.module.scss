@@ -1,48 +1,109 @@
-.div-image {
-    position: relative;
-}
-
-
-.image {
-    width: 100vw;
-
-    * {
-        width: 100%;
-    }
-}
-
-.buttons {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    .button {
-
-        padding: 1rem 1.5rem;
-        background-color: var(--black);
-    }
-}
-
-.div-text {
-    padding: 3rem 1.5rem;
-
-    .title {
-        font-size: 2rem;
-        font-weight: 700;
-        line-height: 2rem;
-    }
-
-    .text {
-        margin-top: 1rem;
-        color: var(--gray);
-        letter-spacing: 1px;
-    }
-
-    .shopButton {
-        margin-top: 2rem;
-        gap: 1rem;
-        text-transform: uppercase;
+.section {
+    @media screen and (min-width:1440px) {
         display: flex;
-        letter-spacing: 12px;
+        width: 100vw;
+        height: 70vh;
+
+        .div-image {
+            width: 60vw;
+        }
     }
+
+    .div-image {
+
+        position: relative;
+
+        .image {
+
+            @media screen and (min-width:1440px) {
+
+                * {
+
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            width: 100vw;
+
+
+
+            * {
+                width: 100%;
+            }
+        }
+    }
+
+    .buttons {
+        @media screen and (min-width:1440px) {
+            left: 100%;
+        }
+
+        display: flex;
+        height: 5em;
+        width: 10em;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        .button {
+            position: relative;
+            flex-basis: 50%;
+            background-color: var(--black);
+
+            img {
+                margin: auto;
+            }
+
+            &:hover {
+                background-color: var(--dark-gray);
+            }
+        }
+
+    }
+
+    .div-text {
+        padding: 4rem 2rem;
+
+        @media screen and (min-width: 1440px) {
+            padding: 8rem 5rem 10rem 7rem;
+            width: 40vw;
+
+        }
+
+        .title {
+
+            font-size: 2.75em;
+            font-weight: 600;
+            line-height: 2.75rem;
+        }
+
+        .text {
+            height: 100px;
+        }
+
+        .shopButton {
+            margin-top: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            font-size: 1.125em;
+            font-weight: 700;
+
+            img {
+                height: 15px;
+                width: 50px;
+            }
+
+            &:hover {
+                color: var(--gray);
+            }
+
+        }
+
+    }
+
 }
